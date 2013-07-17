@@ -4,7 +4,7 @@ var app = express.createServer(express.logger());
 
 app.get('/index.html', function(request, response) {
 
-app.use(express.static('/index.html' + '/bitstarter/bitstarter'));
+app.use(express.static('/index.html' + '/bitstarter'));
 //var content = fs.readFileSync('./index.html','utf8');
   //response.render(content);
 });
