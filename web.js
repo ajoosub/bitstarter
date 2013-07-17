@@ -1,8 +1,8 @@
+var http = require('http');
 var fs = require('fs');
+var port =  process.env.PORT || 5000;
 
-//var goodWords = "Yet today I consider myself the luckiest man on the face of this earth.";
-
-//fs.writeFileSync('lou.txt', someText);
+var server =  http.createServer(function(request, response){
 
 fs.readFile('index.html', 'utf8', function (err,data) {
   if (err) {
@@ -11,6 +11,23 @@ fs.readFile('index.html', 'utf8', function (err,data) {
 
   console.log(data);
 });
+
+responce.end();
+
+});
+
+server.listen(port);
+//var goodWords = "Yet today I consider myself the luckiest man on the face of this earth.";
+
+//fs.writeFileSync('lou.txt', someText);
+
+//fs.readFile('index.html', 'utf8', function (err,data) {
+  //if (err) {
+    //return console.log(err);
+  //}
+
+  //console.log(data);
+//});
 //var http://
 //var express=require('express');
 
