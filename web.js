@@ -2,9 +2,9 @@ var express = require('express');
 vat fs = require('fs');
 var app = express.createServer(express.logger());
 
-app.get('index.html', function(request, response) {
-var content = fs.readFileSync('index.html','utf8');
-  response.end(content.toString());
+app.get('/index.html', function(request, response) {
+var content = fs.readFileSync('./index.html','utf8');
+  response.send(content.toString());
 });
 
 var port = process.env.PORT || 5000;
