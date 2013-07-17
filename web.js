@@ -12,7 +12,7 @@ fs.readFile('index.html', 'utf8', function (err,data) {
   console.log(data);
 });
 
-responce.end();
+response.end();
 
 });
 
