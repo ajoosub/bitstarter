@@ -1,5 +1,5 @@
 var express = require('express');
-vat fs = require('fs');
+var fs = require('fs');
 var app = express.createServer(express.logger());
 
 app.get('/index.html', function(request, response) {
