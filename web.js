@@ -9,14 +9,21 @@ fs.readFile('index.html', 'utf8', function (err,data) {
     return console.log(err);
   }
 
-  console.log(data);
-});
 
+  console.log(data);
 response.end();
+
 
 });
 
 server.listen(port);
+
+});
+
+
+
+
+
 //var goodWords = "Yet today I consider myself the luckiest man on the face of this earth.";
 
 //fs.writeFileSync('lou.txt', someText);
